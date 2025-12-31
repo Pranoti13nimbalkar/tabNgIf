@@ -1,6 +1,6 @@
 
 
-
+<h1 class="text-success">Tab Using NgIf</h1>
 <ul class="nav nav-pills mb-2">
     <li class="nav-items" >
         <a  
@@ -61,22 +61,21 @@
     </li>
 </ul>
 
-<div class="card h-100">
+<div class="card">
     <div class="card-body" *ngIf="selectedSKill.toLowerCase().includes('html')">
         <h2 class="space"><strong>Html</strong></h2>
         <p class="space"> Hypertext Markup Language (HTML) is the standard markup language[a] for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
     </div> 
-    <hr>
+  
      <div class="card-body"  *ngIf="selectedSKill.toLowerCase().includes('css')">
         <h2 class="space"><strong>Css</strong></h2>
         <p class="space"> Cascading Style Sheets (CSS) is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML).[2] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[3]</p>
     </div> 
-     <hr>
+
      <div class="card-body "  *ngIf="selectedSKill.toLowerCase().includes('javascript')">
         <h2 class="space"><strong>Javascript</strong></h2>
         <p class="space"> JavaScript (JS)[a] is a programming language and core technology of the Web, alongside HTML and CSS. It was created by Brendan Eich in 1995.[6] As of 2025, the overwhelming majority of websites (98.9%) uses JavaScript on the client side for webpage behavior</p>
     </div> 
-    <hr>
         <div class="card-body"  *ngIf="selectedSKill.toLowerCase().includes('angular')">
         <h2 class="space"><strong>Angular</strong></h2>
         <p class="space">These Angular docs help you learn and use the Angular framework and development platform, from your first application to optimizing complex single-page applications for enterprises. Tutorials and guides include downloadable examples to help you start your projects.</p>
